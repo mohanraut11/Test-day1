@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-Based Webpage</title>
+    <script>
+        // Task 1: User Registration Form Validation
+        function validateForm() {
+            let name = document.forms["regForm"]["name"].value;
+            let email = document.forms["regForm"]["email"].value;
+            let password = document.forms["regForm"]["password"].value;
+
+            if (name == "" || email == "" || password == "") {
+                alert("All fields must be filled out!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- Task 1: User Registration Form with Validation -->
+    <h2>Task 1: User Registration</h2>
+    <form name="regForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Task 2: Video and Audio Player with Controls -->
+    <h2>Task 2: Video and Audio Player</h2>
+    <h3>Video Player</h3>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h3>Audio Player</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Task 3: Display an SVG Icon from Figma -->
+    <h2>Task 3: SVG Icon from Figma</h2>
+    <img src="Introduction (1).svg" alt="SVG Icon" width="50" height="50">
+
+    <!-- Task 4: Embed a YouTube Video -->
+    <h2>Task 4: YouTube Video</h2>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/dL9Ey1mQT0k" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <!-- Task 5: WSP Sign-in Form Without Styling -->
+    <h2>Task 5: WSP Sign-in Form</h2>
+    <form>
+        <label for="wsp-email">Email:</label>
+        <input type="email" id="wsp-email" required>
+        <br>
+
+        <label for="wsp-password">Password:</label>
+        <input type="password" id="wsp-password" required>
+        <br>
+
+        <button type="submit">Sign In</button>
+    </form>
+
+</body>
+</html>
