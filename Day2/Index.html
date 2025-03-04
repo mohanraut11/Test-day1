@@ -149,9 +149,22 @@
             outline: none;
         }
 
+        /* Fix textarea alignment */
         form textarea {
-            height: 100px;
+            width: 80%; /* Match width with input fields */
+            max-width: 500px; /* Prevent excessive width */
+            height: 120px;
             resize: none;
+            display: block;
+            margin: 10px auto; /* Center align */
+        }
+
+        /* Fix button alignment */
+        form .btn {
+            width: 80%; /* Match width with input and textarea */
+            max-width: 500px;
+            display: block;
+            margin: 10px auto; /* Center align */
         }
 
         /* Responsive Design */
@@ -197,30 +210,26 @@
     <!-- About Section -->
     <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>  Hello! I'm a passionate web QA with a strong interest in creating modern, responsive, 
-            and user-friendly websites. I specialize in Quality Assurance annalyst with expertise in 
-            HTML, CSS, and I love turning ideas into interactive digital experiences. and I’m always eager to learn new technologies to enhance my skills. My goal is to build innovative web applications 
-            that make a real impact. Let's connect and build something amazing together!</p>
+        <p>
+            Hello! I'm a passionate web QA with a strong interest in creating modern, responsive, 
+            and user-friendly websites. I specialize in Quality Assurance analysis with expertise in 
+            HTML, CSS, and I love turning ideas into interactive digital experiences. I’m always eager 
+            to learn new technologies to enhance my skills. My goal is to build innovative web applications 
+            that make a real impact. Let's connect and build something amazing together!
+        </p>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="content-section">
         <h2>My Skills</h2>
-        <p>I bring strong communication skills that enable me to 
-            collaborate effectively with teams and clients. My creativity allows me to 
-            design innovative and user-friendly interfaces, while my problem-solving 
-            abilities help me tackle challenges efficiently. I am highly adaptable, always 
-            eager to learn new technologies and embrace change in a fast-paced industry.
-             My time management and attention to detail ensure that I deliver high-quality 
-             work within deadlines. Additionally, my teamwork and leadership skills enable me 
-             to contribute positively to any project, fostering a collaborative and productive work environment.
- </p>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="content-section">
-        <h2>Latest Blog Posts</h2>
-        <p>Stay updated with my latest tech blogs and tutorials.</p>
+        <p>
+            I bring strong communication skills that enable me to collaborate effectively with teams and clients. 
+            My creativity allows me to design innovative and user-friendly interfaces, while my problem-solving 
+            abilities help me tackle challenges efficiently. I am highly adaptable, always eager to learn new 
+            technologies and embrace change in a fast-paced industry. My time management and attention to detail 
+            ensure that I deliver high-quality work within deadlines. Additionally, my teamwork and leadership 
+            skills enable me to contribute positively to any project, fostering a collaborative and productive work environment.
+        </p>
     </section>
 
     <!-- Contact Form -->
